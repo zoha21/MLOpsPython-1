@@ -39,11 +39,11 @@ jobs:
     displayName: 'replace subscription value'
 
   - script: |
-      'pytest tests/unit/data_test.py'
+      pytest tests/unit/data_test.py
     displayName: 'Data Quality Check'
 
   - script: |
-      'python aml_service/00-WorkSpace.py'
+      python aml_service/00-WorkSpace.py
     displayName: 'Get or Create workspace copy'
 
   - script: |
