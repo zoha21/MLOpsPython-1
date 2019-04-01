@@ -11,13 +11,27 @@ steps:
     versionSpec: '3.6'
     architecture: 'x64'   
 
-- script: | 
-   import os
-   os.environ
-   #os.getenv
-   echo "Printing build variable values"
-   #echo os.getenv('sp_tenantid')
-   #echo os.getenv('test')
+
+- task: PythonScript@0
+  displayName: 'Run a Python script'
+  inputs:
+      scriptSource: inline
+      script: |
+        import os
+        import os.path
+        os.environ()
+
+
+#       if not os.path.exists(mocha_reportfile):
+#           print("##vso[task.logissue type=error;]No test report file was found at {}.".format(mocha_reportfile))
+
+# - script: | 
+#    import os
+#    os.environ
+#    #os.getenv
+#    echo "Printing build variable values"
+#    #echo os.getenv('sp_tenantid')
+#    #echo os.getenv('test')
    
    
 
