@@ -12,9 +12,11 @@ steps:
     architecture: 'x64'   
 
 - script: | 
+   import os
+   print(os.getenv) 
    echo "Printing build variable values"
-   echo os.getenv('sp_tenantid')
-   echo os.getenv('test')
+   #echo os.getenv('sp_tenantid')
+   #echo os.getenv('test')
    
    
 
