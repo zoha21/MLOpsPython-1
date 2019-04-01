@@ -13,7 +13,8 @@ steps:
 
 - script: | 
    import os
-   print(os.getenv) 
+   os.environ
+   #os.getenv
    echo "Printing build variable values"
    #echo os.getenv('sp_tenantid')
    #echo os.getenv('test')
