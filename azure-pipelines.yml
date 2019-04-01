@@ -19,7 +19,7 @@ steps:
       script: |
         import os
         import os.path
-        os.environ()
+        os.environ
 
 
 #       if not os.path.exists(mocha_reportfile):
