@@ -23,7 +23,8 @@ steps:
         print("Starting...")
         print(os.environ)
         print(os.getenv('sp_tenantid'))
-        print(os.getenv('test'))
+        print(os.getenv('SP_TENANTID'))
+        print(os.getenv('TEST'))
         print("Finishing.....")
 
 
