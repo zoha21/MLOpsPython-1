@@ -20,6 +20,12 @@ steps:
         import os
         import os.path
         os.environ
+        print("Starting...")
+        print(os.environ)
+        print(os.getenv('sp_tenantid'))
+        print(os.getenv('test'))
+        print("Finishing.....")
+
 
 
 #       if not os.path.exists(mocha_reportfile):
